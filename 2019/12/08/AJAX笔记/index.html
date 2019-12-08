@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | 木子李</title>
+  <title>AJAX笔记 | 木子李</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="听喜欢的歌，看喜欢的相声，做喜欢的事，爱喜欢的人">
+  <meta name="description" content="AJAX笔记 1. AJAX简介   AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术 AJAX=异步JavaScript和XML AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新">
 <meta name="keywords" content="前端，三维">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木子李">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AJAX笔记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="木子李">
-<meta property="og:description" content="听喜欢的歌，看喜欢的相声，做喜欢的事，爱喜欢的人">
+<meta property="og:description" content="AJAX笔记 1. AJAX简介   AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术 AJAX=异步JavaScript和XML AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;ajax-yl.png">
+<meta property="og:updated_time" content="2019-12-08T06:53:45.521Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;ajax-yl.png">
   
     <link rel="alternative" href="/atom.xml" title="木子李" type="application/atom+xml">
   
@@ -162,195 +165,313 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-AJAX笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      AJAX笔记
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+
+        
+        <a href="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2019-12-08T06:11:13.967Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/">AJAX笔记</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><center><font color=black size=5>AJAX笔记</font></center></h1>
+1. AJAX简介
 
-        <div class="article-info info-on-right">
-          
-          
+<blockquote>
+<p>AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术</p>
+<p>AJAX=异步JavaScript和XML</p>
+<p>AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新</p>
+</blockquote>
+<a id="more"></a>
 
+<center><img src="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/ajax-yl.png" class="" title="ajax工作原理"></center>
+<center><font color='#000'><b>AJAX工作原理</b></font></center>
+
+<blockquote>
+<p>一个AJAX实例</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"myDiv"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">h2</span>&gt;</span>使用AJAX修改文本内容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">onclick</span>=<span class="string">'loadXMLDoc()'</span>&gt;</span>修改内容<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">		<span class="function"><span class="keyword">function</span> <span class="title">loadXMLDoc</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="keyword">var</span> xmlhttp;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="comment">//IE7+,Firefox,Chrome,Opera,Safari浏览器执行的代码</span></span></span><br><span class="line"><span class="actionscript">               xmlhttp=<span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line">			&#125;</span><br><span class="line"><span class="actionscript">			<span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="comment">//IE6，IE5浏览器执行的代码</span></span></span><br><span class="line"><span class="actionscript">				xmlhttp=<span class="keyword">new</span> ActiveObject(<span class="string">'Microsoft.XMLHTTP'</span>);</span></span><br><span class="line">			&#125;</span><br><span class="line"><span class="actionscript">			xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span></span><br><span class="line">				if(xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)&#123;</span><br><span class="line"><span class="javascript">					<span class="built_in">document</span>.getElementById(<span class="string">'myDiv'</span>).innerHTML=xmlhttp.responseText;</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;;</span><br><span class="line"><span class="actionscript">			xmlhttp.open(<span class="string">'GET'</span>,<span class="string">'/try/ajax/ajax_info.txt'</span>,<span class="literal">true</span>);</span></span><br><span class="line">			xmlhttp.send();</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p>创建对象</p>
+<ul>
+<li><p>创建XMLHttpRequest对象</p>
+<blockquote>
+<p>XMLHttpRequest是AJAX的基础</p>
+<p>所有现代浏览器均支持XMLHttpRequest对象(IE5和IE6使用ACTIVEXObject)</p>
+<p>XMLHttpRequest用于在后台与服务器交换数据，这就可以在不重新加载整个网页的情况下，对网页的某部分进行更新</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建XMLHttpRequest对象的语法，适用于现代浏览器</span></span><br><span class="line"><span class="keyword">var</span> xmlhttp=<span class="keyword">new</span> XMLHttpRequest()</span><br><span class="line"><span class="comment">//老版本的(IE6和IE5)使用ActiveX对象</span></span><br><span class="line"><span class="keyword">var</span> xmlhttp=<span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>向服务器发送请求</p>
+<blockquote>
+<p>若需要将请求发送到服务器，使用XMLHttpRequest对象的open()和send()方法</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">'GET'</span>,<span class="string">'ajax_info.txt'</span>,<span class="literal">true</span>)</span><br><span class="line">xmlhttp.send()</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">open(method,url,async)</td>
+<td align="center">规定请求的类型，URL以及是否异步。1.method:请求的类型：GET和POST   2.url:文件在服务器上的位置       3.async:true(异步)或false(同步)</td>
+</tr>
+<tr>
+<td align="center">send(string)</td>
+<td align="center">将请求发送到服务器                  string仅用于POST请求</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>与POST请求相比，GET更简单也更快，并且在大部分情况下都能用，但是在以下情况下，使用PSOT请求：</p>
+<ul>
+<li>无法使用缓存文件(更新服务器上的文件或数据库)</li>
+<li>向服务器发送大量数据(POST没有数据量限制)</li>
+<li>发送包含未知字符的用户输入时，POST比GET更稳定更可靠</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>url——服务器上的文件</p>
+<p>open()方法的url参数是服务器上文件的地址，该文件可以是任何类型的文件。比如.txt和.xml，或者服务器脚本文件，比如.asp和.php文件</p>
+</blockquote>
+<blockquote>
+<p>Async——true/false</p>
+<p>r若XMLHttpRequest对象用于AJAX，则open()方法中的async参数必须设置为true</p>
+<p>当async=true时，将响应位于onreadystatechange事件中的就绪状态时执行的函数</p>
+</blockquote>
+</li>
+<li><p>服务器响应</p>
+<blockquote>
+<p>若需要获取来自服务器的响应，使用XMLHttpRequest对象的responseText和responseXML属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">responseText</td>
+<td align="center">获得字符串形式的响应数据</td>
+</tr>
+<tr>
+<td align="center">responseXML</td>
+<td align="center">获得XML形式的响应数据</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>如果来自服务器的响应并非XML，可以这样使用responseText属性</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'myDiv'</span>.innerHTML=xmlhttp.responseText);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>若是 XML，需要对XML对象进行解析，使用responseXML属性</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>onreadystatechange事件</p>
+<blockquote>
+<p>当请求被发送到服务器时，需要执行一些基于响应的任务，每当readyState改变时，就会触发onreadystatechange事件</p>
+<p>readyState水性存有XMLHttpRequest的状态信息</p>
+</blockquote>
+</li>
+</ol>
+<center>XXMLHttpRequest对象的三个重要属性</center>
+|        属性        |                 描述  |
+| :----------------: | :------------------------------: |
+| onreadystatechange |  每当readyState属性改变时，就会调用该函数|
+|     readyState     | 存有XMLHttpRequest的状态，从0到4发生变化。0：请求未初始化；   1：服务器连接已建立；   2：请求已接收；   3：请求处理中； 4：请求已完成，且响应已就绪 |
+|       status       |              200："OK" ；      404：未找到页面               |
+
+<blockquote>
+<p>xmlhttp.readyState的值及解释：</p>
+<p>0：请求未初始化(还没有调用open())</p>
+<p>1：请求已建立，但是还没有发送(还没有调用send())</p>
+<p>2：请求已发送，正在处理中(通常现在可以从响应中获取内容头)</p>
+<p>3：请求在处理中，通常响应中已有部分数据可用了，但服务器还没有完成该响应的生成</p>
+<p>4：响应已完成，可以获取并使用服务器的响应了</p>
+<p>xmlhttp.status的值及解释：</p>
+<p>1xx：信息响应类，表示接收到请求并且继续处理</p>
+<p>2xx：处理成功响应类，表示动作被成功接收、理解和接受</p>
+<p>3xx：重定向响应类，未来完成指定的动作，必须接受进一步处理</p>
+<p>4xx：客户端错误，客户请求包含语法错误或不能正确执行</p>
+<p>5xx：服务端错误，服务器不能正确执行一个正确的请求</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">   	 <span class="keyword">if</span>(xmlhttp.readyState==<span class="number">4</span> &amp;&amp; xmlhttp.status==<span class="number">200</span>)&#123;</span><br><span class="line">         <span class="built_in">document</span>.getElementById(<span class="string">'myDiv'</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>onreadystatechange事件被触发4次，分别是0-&gt;1，1-&gt;2，2-&gt;3，3-4，对应着readyState的每个变化</p>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我过早<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechatpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%BA%8C/" class="archive-article-date">
-  	<time datetime="2019-12-08T06:11:01.173Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python爬虫-二</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%BA%8C/">python爬虫-二</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">AJAX笔记</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/SQL/" class="archive-article-date">
-  	<time datetime="2019-12-08T06:11:01.163Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/SQL/">SQL</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2019-12-08T06:11:01.141Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%B8%80/">python爬虫-一</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%B8%89/" class="archive-article-date">
-  	<time datetime="2019-12-08T06:11:01.099Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/python%E7%88%AC%E8%99%AB-%E4%B8%89/">python爬虫-三</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/07/hexo%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-12-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/07/hexo%E7%AC%94%E8%AE%B0/">hexo笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -373,8 +494,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>hexo笔记 | 木子李</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo笔记 1. ##### hexo常用命令   安装hexo    npm install -g hexo-cli  初始化项目    hexo init lisimoner  编译    hexo generate        可缩写为    hexo g  本地运行    hexo serve      可缩写为    hexo s  部署到github上    hexo deploy">
+  <meta name="description" content="hexo笔记    hexo常用命令 安装hexo    npm install -g hexo-cli 初始化项目    hexo init lisimoner 编译    hexo generate        可缩写为    hexo g 本地运行    hexo serve      可缩写为    hexo s 部署到github上    hexo deploy     可缩写为">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo笔记">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;07&#x2F;hexo%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="木子李">
-<meta property="og:description" content="hexo笔记 1. ##### hexo常用命令   安装hexo    npm install -g hexo-cli  初始化项目    hexo init lisimoner  编译    hexo generate        可缩写为    hexo g  本地运行    hexo serve      可缩写为    hexo s  部署到github上    hexo deploy">
+<meta property="og:description" content="hexo笔记    hexo常用命令 安装hexo    npm install -g hexo-cli 初始化项目    hexo init lisimoner 编译    hexo generate        可缩写为    hexo g 本地运行    hexo serve      可缩写为    hexo s 部署到github上    hexo deploy     可缩写为">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-08T07:04:54.638Z">
+<meta property="og:updated_time" content="2019-12-14T07:21:19.375Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="木子李" type="application/atom+xml">
@@ -96,9 +96,9 @@ var _hmt = _hmt || [];
 		        
 			</div>
 		</nav>
-		<nav class="header-music">
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=60% height=50% src="//music.163.com/outchain/player?type=2&id=1316351312&auto=1&height=66"></iframe>
-		</nav>
+		<div style="position:absolute; bottom:10px; left:auto; width:85%">
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=86 src="//music.163.com/outchain/player?type=2&id=1316351312&auto=1&height=66"></iframe>
+		</div>
 	</header>		
 </div>
 
@@ -183,32 +183,30 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h4><center><font color=red>hexo笔记</font></center></h4>
-1. ##### hexo常用命令
 
-<ul>
-<li><p>安装hexo    npm install -g hexo-cli</p>
-</li>
-<li><p>初始化项目    hexo init lisimoner</p>
-</li>
-<li><p>编译    hexo generate        可缩写为    hexo g</p>
-</li>
-<li><p>本地运行    hexo serve      可缩写为    hexo s</p>
-</li>
-<li><p>部署到github上    hexo deploy     可缩写为    hexo d</p>
-<ul>
+
+<ol>
+<li><h5 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h5><ul>
+<li>安装hexo    npm install -g hexo-cli</li>
+<li>初始化项目    hexo init lisimoner</li>
+<li>编译    hexo generate        可缩写为    hexo g</li>
+<li>本地运行    hexo serve      可缩写为    hexo s</li>
+<li>部署到github上    hexo deploy     可缩写为    hexo d<ul>
 <li>部署之前还需要在根目录安装一个插件，需执行下列命令:                       npm install hexo-deployer-git –save</li>
 </ul>
-<a id="more"></a>
 </li>
-<li><p>每当重修修改样样式以及其他重要内容时，最好 执行下列三步：</p>
-<ol>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li>每当重修修改样样式以及其他重要内容时，最好 执行下列三步：<ol>
 <li>hexo clean</li>
 <li>hexo g</li>
 <li>hexo s</li>
 </ol>
 </li>
 </ul>
-<ol start="2">
+</li>
 <li><h5 id="调整css样式，颜色字体等"><a href="#调整css样式，颜色字体等" class="headerlink" title="调整css样式，颜色字体等"></a>调整css样式，颜色字体等</h5><p>调样式在浏览器打开后打开控制台检查元素，找到自己需要修改样式的元素，然后右上角会有该样式的来源文件，yilia主题基本样式都放在themes/yilia/source/main.0cf68a.cc里面，使用sublime打开后直接定位到需要修改的样式中就行了 </p>
 </li>
 <li><h5 id="目录不显示文章标题，tags标签怎么加，文章截断"><a href="#目录不显示文章标题，tags标签怎么加，文章截断" class="headerlink" title="目录不显示文章标题，tags标签怎么加，文章截断"></a>目录不显示文章标题，tags标签怎么加，文章截断</h5><p>在md文件中直接添加文章标题，如本笔记所示，其中上下都是三个-，注意是英文冒号，不要忘了空格</p>
@@ -371,7 +369,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">hexo笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#调整css样式，颜色字体等"><span class="toc-number">1.1.</span> <span class="toc-text">调整css样式，颜色字体等</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#目录不显示文章标题，tags标签怎么加，文章截断"><span class="toc-number">1.2.</span> <span class="toc-text">目录不显示文章标题，tags标签怎么加，文章截断</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">hexo笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#hexo常用命令"><span class="toc-number">1.1.</span> <span class="toc-text">hexo常用命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#调整css样式，颜色字体等"><span class="toc-number">1.2.</span> <span class="toc-text">调整css样式，颜色字体等</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#目录不显示文章标题，tags标签怎么加，文章截断"><span class="toc-number">1.3.</span> <span class="toc-text">目录不显示文章标题，tags标签怎么加，文章截断</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -497,6 +495,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">现代JavaScript</a>
               </li>
             
             <div class="clearfix"></div>

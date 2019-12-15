@@ -8,18 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>AJAX笔记 | 木子李</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="AJAX笔记 1. AJAX简介   AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术 AJAX=异步JavaScript和XML AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新">
+  <meta name="description" content="AJAX笔记">
 <meta name="keywords" content="前端，三维">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AJAX笔记">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="木子李">
-<meta property="og:description" content="AJAX笔记 1. AJAX简介   AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术 AJAX=异步JavaScript和XML AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新">
+<meta property="og:description" content="AJAX笔记">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;%E7%BE%8E%E5%9B%BE2.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;ajax-yl.png">
-<meta property="og:updated_time" content="2019-12-08T06:53:45.521Z">
+<meta property="og:updated_time" content="2019-12-15T05:13:48.819Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;ajax-yl.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;AJAX%E7%AC%94%E8%AE%B0&#x2F;%E7%BE%8E%E5%9B%BE2.jpg">
   
     <link rel="alternative" href="/atom.xml" title="木子李" type="application/atom+xml">
   
@@ -176,7 +177,13 @@ var _hmt = _hmt || [];
   
 
         
-        <a href="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2019-12-08T06:11:13.967Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
 </a>
         
@@ -185,21 +192,27 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1><center><font color=black size=5>AJAX笔记</font></center></h1>
-1. AJAX简介
+<br/>
 
+<center><img src="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/%E7%BE%8E%E5%9B%BE2.jpg" class=""></center>
+
+<br/>
+
+<a id="more"></a>
+
+<ol>
+<li><p>AJAX简介</p>
 <blockquote>
 <p>AJAX是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术</p>
 <p>AJAX=异步JavaScript和XML</p>
 <p>AJAX是一种用于创建快速动态网页的技术，通过在后台服务器进行少量数据交换，AJAX可以使网页实现异步更新</p>
 </blockquote>
-<a id="more"></a>
-
+</li>
+</ol>
 <center><img src="/2019/12/08/AJAX%E7%AC%94%E8%AE%B0/ajax-yl.png" class="" title="ajax工作原理"></center>
 <center><font color='#000'><b>AJAX工作原理</b></font></center>
+   > 一个AJAX实例
 
-<blockquote>
-<p>一个AJAX实例</p>
-</blockquote>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"myDiv"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">h2</span>&gt;</span>使用AJAX修改文本内容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">onclick</span>=<span class="string">'loadXMLDoc()'</span>&gt;</span>修改内容<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">		<span class="function"><span class="keyword">function</span> <span class="title">loadXMLDoc</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="keyword">var</span> xmlhttp;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="comment">//IE7+,Firefox,Chrome,Opera,Safari浏览器执行的代码</span></span></span><br><span class="line"><span class="actionscript">               xmlhttp=<span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line">			&#125;</span><br><span class="line"><span class="actionscript">			<span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="actionscript">			<span class="comment">//IE6，IE5浏览器执行的代码</span></span></span><br><span class="line"><span class="actionscript">				xmlhttp=<span class="keyword">new</span> ActiveObject(<span class="string">'Microsoft.XMLHTTP'</span>);</span></span><br><span class="line">			&#125;</span><br><span class="line"><span class="actionscript">			xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span></span><br><span class="line">				if(xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)&#123;</span><br><span class="line"><span class="javascript">					<span class="built_in">document</span>.getElementById(<span class="string">'myDiv'</span>).innerHTML=xmlhttp.responseText;</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;;</span><br><span class="line"><span class="actionscript">			xmlhttp.open(<span class="string">'GET'</span>,<span class="string">'/try/ajax/ajax_info.txt'</span>,<span class="literal">true</span>);</span></span><br><span class="line">			xmlhttp.send();</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ol start="2">
 <li><p>创建对象</p>
@@ -474,6 +487,7 @@ var _hmt = _hmt || [];
   
   
   
+  
 
   
 
@@ -486,6 +500,17 @@ var _hmt = _hmt || [];
         </div>
       </div>
       <footer id="footer">
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv" style='display:none'>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="/busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">

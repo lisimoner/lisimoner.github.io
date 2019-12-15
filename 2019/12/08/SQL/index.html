@@ -8,19 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>SQL | 木子李</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL笔记 1. SQL(Structured Query Language)是一种专门用来与数据库沟通的语言   主键：一列或一组列，其值能够唯一标识表中的每一行 表中的任何列都可以作为主键，但必须满足以下条件：  任意两行都不具有相同的主键  每一行都必须具有一个主键值(主键列不允许为NULL值)  主键列中的值不允许修改或更新  主键值不能重用(如果某行从表中删除，它的主键不能赋值给以后的新">
+  <meta name="description" content="SQL笔记">
 <meta name="keywords" content="前端，三维">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;index.html">
 <meta property="og:site_name" content="木子李">
-<meta property="og:description" content="SQL笔记 1. SQL(Structured Query Language)是一种专门用来与数据库沟通的语言   主键：一列或一组列，其值能够唯一标识表中的每一行 表中的任何列都可以作为主键，但必须满足以下条件：  任意两行都不具有相同的主键  每一行都必须具有一个主键值(主键列不允许为NULL值)  主键列中的值不允许修改或更新  主键值不能重用(如果某行从表中删除，它的主键不能赋值给以后的新">
+<meta property="og:description" content="SQL笔记">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;%E5%85%A8%E6%99%AF%E5%9B%BE1.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_195021.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_195605.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_200356.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_201226.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_202123.png">
 <meta property="og:image" content="d:%5CSimonerHexo%5CSQL%E7%AC%94%E8%AE%B0%5C2019-11-28_202836.png">
 <meta property="og:image" content="d:%5CSimonerHexo%5CSQL%E7%AC%94%E8%AE%B0%5Cimage-20191129092247521.png">
 <meta property="og:image" content="c:%5CUsers%5Csimon%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191129093205546.png">
@@ -56,9 +53,9 @@
 <meta property="og:image" content="d:%5CSimonerHexo%5CSQL%E7%AC%94%E8%AE%B0%5Cimage-20191204195428387.png">
 <meta property="og:image" content="d:%5CSimonerHexo%5CSQL%E7%AC%94%E8%AE%B0%5Cimage-20191204201435047.png">
 <meta property="og:image" content="d:%5CSimonerHexo%5CSQL%E7%AC%94%E8%AE%B0%5Cimage-20191205202357748.png">
-<meta property="og:updated_time" content="2019-12-08T07:00:53.774Z">
+<meta property="og:updated_time" content="2019-12-15T05:15:51.501Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;2019-11-28_195021.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;SQL&#x2F;%E5%85%A8%E6%99%AF%E5%9B%BE1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="木子李" type="application/atom+xml">
   
@@ -215,7 +212,13 @@ var _hmt = _hmt || [];
   
 
         
-        <a href="/2019/12/08/SQL/" class="archive-article-date">
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/12/08/SQL/" class="archive-article-date">
   	<time datetime="2019-12-08T06:11:01.163Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
 </a>
         
@@ -224,9 +227,16 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1><center><font size=5>SQL笔记</font></center></h1>
-1. SQL(Structured Query Language)是一种专门用来与数据库沟通的语言
+<br/>
 
-<ol start="2">
+<center><img src="/2019/12/08/SQL/%E5%85%A8%E6%99%AF%E5%9B%BE1.jpg" class=""></center>
+<br/>
+
+<a id="more"></a>
+
+<ol>
+<li><p>SQL(Structured Query Language)是一种专门用来与数据库沟通的语言</p>
+</li>
 <li><p>主键：一列或一组列，其值能够唯一标识表中的每一行</p>
 <p>表中的任何列都可以作为主键，但必须满足以下条件：</p>
 <ul>
@@ -241,8 +251,6 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ol>
-<a id="more"></a>
-
 <h4><center>检索数据</center></h4>
 
 <ol>
@@ -256,15 +264,13 @@ var _hmt = _hmt || [];
 </li>
 </ol>
    <center><img src="/2019/12/08/SQL/2019-11-28_195021.png" class=""></center>
+   + 利用DISTINCT关键字检索不同的值
 
-<ul>
-<li><p>利用DISTINCT关键字检索不同的值</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> VEND_ID</span><br><span class="line"><span class="keyword">FROM</span> [<span class="keyword">MASTER</span>].[DBO].[Products]</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> VEND_ID</span><br><span class="line"><span class="keyword">FROM</span> [<span class="keyword">MASTER</span>].[DBO].[Products]</span><br></pre></td></tr></table></figure></code></pre><ul>
 <li><p>加上DISTINCT关键字后将显示唯一值，相同的值只出现一次</p>
   <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">distinct</span> VEND_ID</span><br><span class="line"><span class="keyword">FROM</span> [<span class="keyword">MASTER</span>].[DBO].[Products]</span><br></pre></td></tr></table></figure>
 
-  <center><img src="/2019/12/08/SQL/2019-11-28_195605.png" class=""></center>
+  <center>{% asset_img 2019-11-28_195605.png %}</center>
 </li>
 <li><p><font color=#f40>使用注释，–和#以及/**/</font>都可以用于SQL语句的注释</p>
 </li>
@@ -274,20 +280,16 @@ var _hmt = _hmt || [];
 <li><p>使用ORDER BY子句可以对输出的检索数据进行排序，其中ORDER BY 子句必须放在SELECT语句的最后面，否则将报错</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> PROD_NAME</span><br><span class="line"><span class="keyword">FROM</span> [<span class="keyword">MASTER</span>].[DBO].[PRODUCTS]</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> PROD_NAME</span><br></pre></td></tr></table></figure>
 
-<center><img src="/2019/12/08/SQL/2019-11-28_200356.png" class=""></center>
+<center>{% asset_img 2019-11-28_200356.png %}</center>
 </li>
 <li><p>当需要按多个列进行排序时，列名之间用,来隔开，下面是对列的结果先进行价格排序，然后按照名称排序，价格排序的优先级要大于名称排序，还可以根据列的相对位置来排序，下列语句中注释的语句是一样的排序效果</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> PROD_ID,PROD_price,prod_name</span><br><span class="line"><span class="keyword">from</span> [<span class="keyword">master</span>].[dbo].[products]</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> prod_price,prod_name</span><br><span class="line"><span class="comment">#order by 2,3</span></span><br></pre></td></tr></table></figure>
 
-<center><img src="/2019/12/08/SQL/2019-11-28_201226.png" class=""></center>
-
-<ul>
+<center>{% asset_img 2019-11-28_201226.png %}</center></li>
 <li><p>通过<font color=red>DESC</font>关键字(DESCENDING)来指定排序方向，排序默认是升序排序(从A到Z)，可以使用DESC来降序排序，但是遇到多列排序的状况，DESC只对它前面的列名有效(只有一个有效)，若需要对多个列名降序排序，需要在每个列名后添加DESC，如下列语句，DESC只对prod_price有效    （ASC是升序排序(ASCENDING)）</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> prod_id,prod_price,prod_name</span><br><span class="line"><span class="keyword">from</span> [<span class="keyword">master</span>].[dbo].[products]</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> prod_price <span class="keyword">DESC</span>, prod_name</span><br></pre></td></tr></table></figure>
 
-<center><img src="/2019/12/08/SQL/2019-11-28_202123.png" class=""></center>
-</li>
-</ul>
+<center>{% asset_img 2019-11-28_202123.png %}</center>
 </li>
 </ul>
 </li>
@@ -1218,6 +1220,7 @@ var _hmt = _hmt || [];
   
   
   
+  
 
   
 
@@ -1230,6 +1233,17 @@ var _hmt = _hmt || [];
         </div>
       </div>
       <footer id="footer">
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv" style='display:none'>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="/busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
